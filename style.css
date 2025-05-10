@@ -18,12 +18,17 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--third-color)
+  );
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 96vh;
   background: linear-gradient(
     135deg,
     var(--secondary-color),
@@ -91,7 +96,14 @@ body {
   cursor: pointer;
   color: var(--basic-color);
 }
-
+.footer {
+  width: fit-content;
+  font-size: 12px;
+  margin: auto;
+  text-align: justify;
+  font-weight: 400;
+  color: var(--primary-color);
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
